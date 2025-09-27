@@ -94,12 +94,15 @@ button:hover {
     font-size: 128px;
     font-weight: 900;
     text-align: center;
-    text-transform: capitalize;
+    text-transform:none;
    line-height: 1.5%;
    letter-spacing: 0%;
 }
-.hero-title span{
+.hero-title .accent-dark{
     color: var(--color-accent-dark);
+}
+.hero-title .accent-light {
+    color: var(--color-accent-light);
 }
 
 /* Trandition section */
