@@ -1,0 +1,18 @@
+.button {
+    /* width: 238px;
+    height: 59px; */
+    padding: 16px 32px;
+    border: 2px solid var(--color-accent-dark);
+    border-radius: 8px;
+    color: var(--color-accent-light);
+    background-color: var(--color-accent-dark);
+    font-weight: 600;
+    display: block;
+    cursor: pointer;
+
+}
+
+.button:hover {
+    color: var(--color-accent-dark);
+    background-color: transparent;
+}

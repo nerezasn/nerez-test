@@ -1,0 +1,114 @@
+.footer-section {
+    position: relative;
+    padding: 32px 0;
+    background-image: url(../img/footer_bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: var(--color-primary);
+
+    @media screen and (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: url(../img/footer_bg@2x.png);
+          
+        }
+    
+
+    &__container {
+            display: flex;
+            gap: 20px;
+            flex-direction:column;
+
+            @media screen and (min-width: $bp-tablet) {
+                    flex-direction: row;
+                    flex-basis: 50%;
+                }
+        }
+    
+        &__nav, &__address {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            gap: 20px;
+
+            @media screen and (min-width: $bp-tablet){
+                flex-direction: row;
+                flex-basis: 50%;
+                text-align: left;
+            
+            }
+        }
+    
+        &__logo,
+        &__menu {
+            flex-grow: 1;
+    
+        }
+    
+        &__address-list,
+        &__address-info {
+            flex-grow: 1;
+    
+        }
+    
+        &__address-link {
+            font-size: 16px;
+            font-weight: 300;
+            color: var(--color-accent-light);
+        }
+    
+        &__address-link:hover {
+            color: var(--color-accent-dark);
+    
+        }
+    
+        &__address-copyright {
+            font-size: 14px;
+            color: var(--color-secondary-accent-midton);
+    
+        }
+    
+        &__address-icons {
+            fill: var(--color-accent-light);
+        }
+    
+    
+    
+        &::before,
+        &::after {
+            position: absolute;
+            bottom: 0;
+            content: "";
+        }
+    
+        &::before {
+            left: 0;
+            width: 179px;
+            height: 121px;
+            background-image: url(../img/footer_bread_left.png);
+
+            @media screen and (min-device-pixel-ratio: 2),
+                (min-resolution: 192dpi),
+                (min-resolution: 2dppx) {
+                    background-image: url(../img/footer_bread_left@2x.png);
+                    background-size: cover;
+                }
+        }
+    
+        &::after {
+            right: 0;
+            width: 378px;
+            height: 187px;
+            background-image: url(../img/footer_bread_right.png);
+
+            @media screen and (min-device-pixel-ratio: 2),
+                (min-resolution: 192dpi),
+                (min-resolution: 2dppx) {
+                    background-image: url(../img/footer_bread_right@2x.png);
+                    background-size: cover;
+                }
+        }
+
+}
+

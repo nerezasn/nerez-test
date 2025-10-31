@@ -1,0 +1,14 @@
+.section {
+    padding: 20px 0;
+    @media screen and (min-width: $bp-tablet) {
+            padding: 48px 0;
+        }
+
+    &__title {
+            &--centered {
+                text-align: center;
+                margin-bottom: 64px;
+            }
+        }
+}
+
